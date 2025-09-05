@@ -13,7 +13,7 @@ import SeedphaseImg from "../assets/images/vector/seedphase.png";
 
 const Tokenomics = () => {
   return (
-    <div className="tokenomics-section">
+    <div className="tokenomics-section" id="tokenomics">
       <div className="tokenomics-title text">Tokenomics</div>
       <div className="tokenomics-wrapper">
         <img alt="chart" src={ChartImg} className="tokenomics-chart-img" />
