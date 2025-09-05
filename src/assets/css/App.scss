@@ -1,9 +1,11 @@
 .main-section {
   width: 100vw;
   background-color: #221911;
-  min-height: 100vh;
+  max-height: 100vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: auto;
 }
