@@ -28,13 +28,25 @@ const Header = () => {
         </a>
       </div>
       <div className="sign-bar">
-        <button className="social-btn" type="button">
+        <button
+          className="social-btn"
+          type="button"
+          onClick={() => alert("Social account was not linked yet.")}
+        >
           <img src={XImg} alt="x" className="social-icon" />
         </button>
-        <button className="social-btn" type="button">
+        <button
+          className="social-btn"
+          type="button"
+          onClick={() => alert("Social account was not linked yet.")}
+        >
           <img src={InstagramImg} alt="instagram" className="social-icon" />
         </button>
-        <button className="social-btn" type="button">
+        <button
+          className="social-btn"
+          type="button"
+          onClick={() => alert("Social account was not linked yet.")}
+        >
           <img src={DiscordImg} alt="discord" className="social-icon" />
         </button>
         <button

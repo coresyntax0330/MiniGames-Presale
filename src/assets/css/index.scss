@@ -109,6 +109,11 @@ button {
 ::-webkit-scrollbar {
   width: 6px; /* vertical scrollbar */
   height: 6px; /* horizontal scrollbar */
+
+  @media (max-width: 768px) {
+    width: 3px;
+    height: 3px;
+  }
 }
 
 /* Track (background of the scrollbar) */
