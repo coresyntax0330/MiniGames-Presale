@@ -1,0 +1,12 @@
+.footer-section {
+  height: 130px;
+  width: 100%;
+  background-color: #1d150e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    height: 100px;
+  }
+}

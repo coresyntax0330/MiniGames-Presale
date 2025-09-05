@@ -1,0 +1,205 @@
+.howtobuy-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  padding: 0 30px;
+
+  @media (max-width: 768px) {
+    padding: 0 10px;
+    margin: 20px 0;
+  }
+
+  .howtobuy-title {
+    font-size: 64px;
+    font-weight: bold;
+    text-align: center;
+
+    @media (max-width: 576px) {
+      font-size: 50px;
+    }
+  }
+
+  .howtobuy-subtitle {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+
+    @media (max-width: 576px) {
+      font-size: 32px;
+    }
+  }
+
+  .howtobuy-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin: 80px 0;
+
+    @media (max-width: 768px) {
+      margin: 40px 0;
+      flex-direction: column;
+      gap: 30px;
+      padding: 10px 0;
+    }
+
+    .howtobuy-line {
+      position: absolute;
+      top: 30px;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 28px;
+      border-radius: 24px;
+      background-color: #443120;
+      z-index: 0;
+
+      @media (max-width: 768px) {
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateY(0);
+        width: 22px;
+        transform: translateX(16px);
+      }
+    }
+
+    .howtobuy-item {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      @media (max-width: 768px) {
+        flex-direction: row;
+        width: 100%;
+        flex: none;
+      }
+
+      .how-number {
+        width: 60px;
+        height: 60px;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fcb100;
+        font-size: 40px;
+
+        @media (max-width: 768px) {
+          width: 52px;
+          height: 52px;
+          font-size: 34px;
+        }
+      }
+
+      .how-sub-section {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        @media (max-width: 768px) {
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding-left: 20px;
+        }
+
+        .how-title {
+          margin-top: 25px;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+
+          @media (max-width: 768px) {
+            text-align: left;
+            margin-top: 0;
+          }
+        }
+
+        .how-content {
+          font-size: 18px;
+          color: #828282;
+          text-align: center;
+          margin-top: 10px;
+
+          @media (max-width: 768px) {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  .payment-btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .payment-btn {
+      background-color: #533c28;
+      border: 2px solid #5d432d;
+      border-radius: 14px;
+      padding: 0 46px;
+      height: 78px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        height: 70px;
+        width: 100%;
+      }
+
+      @media (max-width: 576px) {
+        height: 64px;
+      }
+
+      .payment-btn-img {
+        height: 36px;
+
+        @media (max-width: 768px) {
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .card-description {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color: #828282;
+    width: 40%;
+    margin: 25px 0;
+    text-align: center;
+
+    @media (max-width: 991px) {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      margin: 15px 0;
+    }
+  }
+
+  .moonshot-img {
+    height: 24px;
+  }
+}

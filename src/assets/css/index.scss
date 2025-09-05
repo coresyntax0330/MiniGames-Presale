@@ -1,5 +1,107 @@
+@font-face {
+  font-family: "Rowdies";
+  src: url("../fonts/Rowdies-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Rowdies";
+  src: url("../fonts/Rowdies-Light.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Rowdies";
+  src: url("../fonts/Rowdies-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Rowdies", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.text {
+  -webkit-text-stroke: 6px #a37029;
+  paint-order: stroke fill;
+  text-shadow: 5px 5px 0 #856447, 3px 5px 0 #856447, 5px 0px 0 #856447,
+    -3px 5px 0 #856447;
+}
+
+.small-text {
+  -webkit-text-stroke: 2px #a37029;
+  paint-order: stroke fill;
+  text-shadow: 1px 1px 0 #856447, 0px 1px 0 #856447, 0px 0px 0 #856447,
+    0px 1px 0 #856447;
+}
+
+.medium-text {
+  -webkit-text-stroke: 3px #a37029;
+  paint-order: stroke fill;
+  text-shadow: 1px 3px 0 #856447, 0px 3px 0 #856447, 1px 3px 0 #856447,
+    2px 3px 0 #856447;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0px auto;
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: calc(100% - 40px);
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
 }

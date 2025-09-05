@@ -1,0 +1,311 @@
+.dolla-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding: 0 30px;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    margin-top: 0;
+    gap: 80px;
+  }
+
+  @media (max-width: 576px) {
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+
+  .presale-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      flex: none;
+      align-items: center;
+    }
+
+    .presale-title {
+      font-size: 80px;
+      font-weight: bold;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 50px;
+        text-align: center;
+      }
+    }
+
+    .presale-content {
+      margin-top: 10px;
+      color: #828282;
+      font-weight: 100;
+      line-height: 32px;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+    }
+
+    .learn-btn {
+      margin-top: 35px;
+      background-color: #e29a36;
+      border: 3px solid #a37029;
+      border-radius: 16px;
+      height: 72px;
+      padding: 0 54px;
+      font-size: 25px;
+      text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+        height: 60px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .buy-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+
+    @media (max-width: 992px) {
+      width: 100%;
+      flex: none;
+    }
+
+    .buy-bar {
+      width: 95%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #533c2b;
+      border: 6px solid #5d432d;
+      border-radius: 30px;
+      padding: 30px 25px;
+      position: relative;
+
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+
+      @media (max-width: 576px) {
+        padding: 10px;
+      }
+
+      .money-img {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, calc(-50% - 15px));
+        width: 95px;
+
+        @media (max-width: 576px) {
+          width: 70px;
+        }
+      }
+
+      .buy-title {
+        margin-top: 30px;
+        font-size: 38px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        @media (max-width: 576px) {
+          margin-top: 15px;
+          font-size: 24px;
+        }
+      }
+
+      .countdown-bar {
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        @media (max-width: 576px) {
+          margin-top: 15px;
+        }
+
+        .countdown-text {
+          font-size: 22px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          @media (max-width: 576px) {
+            font-size: 18px;
+          }
+        }
+
+        .countdown-time-bar {
+          margin-top: 10px;
+          width: 100%;
+          background-color: #684b31;
+          border: 3px solid #5d432d;
+          border-radius: 16px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: flex-start;
+          padding: 10px 0;
+
+          .timer-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .timer-time {
+              font-size: 35px;
+              font-weight: bold;
+              text-transform: uppercase;
+
+              @media (max-width: 576px) {
+                font-size: 24px;
+              }
+            }
+
+            .timer-day {
+              font-size: 16px;
+
+              @media (max-width: 576px) {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .timer-slash {
+            font-size: 35px;
+            font-weight: bold;
+            line-height: 36px;
+            margin: 0 5px;
+
+            @media (max-width: 576px) {
+              line-height: 24px;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+
+      .raised-bar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 15px;
+
+        .raised-text {
+          font-weight: bold;
+          color: #fff;
+
+          @media (max-width: 576px) {
+            font-size: 18px;
+          }
+        }
+
+        .raised-progress-bar {
+          width: 100%;
+          background-color: #443120;
+          border-radius: 20px;
+          height: 22px;
+          margin-top: 10px;
+          position: relative;
+
+          @media (max-width: 576px) {
+            height: 20px;
+          }
+
+          .raised-progress {
+            background-color: #e29a36;
+            height: 100%;
+            border-radius: 20px;
+            transition: all 0.2s ease-in-out;
+          }
+
+          .symbol-img {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            border-radius: 50px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: all 0.2s ease-in-out;
+
+            @media (max-width: 576px) {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+
+        .price-item {
+          margin-top: 12px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+
+          .price-text {
+            font-size: 18px;
+            color: #828282;
+          }
+
+          .price-value {
+            font-size: 18px;
+            font-weight: 300;
+            color: #fff;
+          }
+        }
+      }
+
+      .buy-btn-group {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        gap: 15px;
+
+        .buy-btn {
+          width: 100%;
+          background-color: #fcb100;
+          border-radius: 16px;
+          height: 72px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 24px;
+          font-weight: bold;
+
+          @media (max-width: 576px) {
+            height: 60px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}
